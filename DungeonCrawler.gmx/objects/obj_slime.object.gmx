@@ -52,7 +52,9 @@ spd = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Move towards player
+            <string>event_inherited();
+
+// Move towards player
 phy_position_x += sign(obj_player.x - x)*spd;
 phy_position_y += sign(obj_player.y - y)*spd;
 </string>

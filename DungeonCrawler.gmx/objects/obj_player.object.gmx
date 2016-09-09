@@ -86,7 +86,9 @@ state = scr_move_state;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Execute the current state
+            <string>event_inherited();
+
+// Execute the current state
 script_execute(state);
 </string>
           </argument>
