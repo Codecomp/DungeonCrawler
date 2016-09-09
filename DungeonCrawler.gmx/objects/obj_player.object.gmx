@@ -33,12 +33,37 @@ spd = 2;
 hspd = 0;
 vspd = 0;
 len = 0;
+dir = 0;
 
 // Set aimation settings
 image_speed = 0;
 
 // State controls
 scr_get_input();
+state = scr_move_state;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Dash state alarm
 state = scr_move_state;
 </string>
           </argument>
@@ -62,7 +87,7 @@ state = scr_move_state;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Move the player in the step event
+            <string>// Execute the current state
 script_execute(state);
 </string>
           </argument>
