@@ -13,6 +13,7 @@
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_up</sprite>
     <sprite>sprites\spr_player_shadow</sprite>
+    <sprite>sprites\spr_slime</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -24,8 +25,11 @@
     <script>scripts\scr_dash_state.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_entity</object>
+    <object>objects\obj_sceneary</object>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_slime</object>
     <object>objects\obj_effect_dash</object>
     <object>objects\obj_view</object>
   </objects>
