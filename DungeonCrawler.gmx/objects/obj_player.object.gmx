@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
+// Combat variables
 attacked = false;
 hp = 3;
 
@@ -36,6 +37,7 @@ hspd = 0;
 vspd = 0;
 len = 0;
 dir = 0;
+face = RIGHT;
 
 // Set aimation settings
 image_speed = 0;
