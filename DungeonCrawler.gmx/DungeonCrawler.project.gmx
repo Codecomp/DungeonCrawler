@@ -89,11 +89,13 @@
     <object>objects\obj_sign</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_speaker</object>
-    <object>objects\object16</object>
+    <object>objects\obj_input</object>
+    <object>objects\obj_pause_menu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
     <room>rooms\rm_test2</room>
+    <room>rooms\rm_pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

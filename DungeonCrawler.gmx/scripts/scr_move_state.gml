@@ -1,8 +1,7 @@
 ///scr_move_state
-scr_get_input();
 
 // Check for action states
-if(interact_key){
+if(obj_input.interact_key){
     var xdir =lengthdir_x(8, face*90);
     var ydir =lengthdir_y(8, face*90);
     var speaker = instance_place(x+xdir, y+ydir, obj_speaker);
@@ -25,7 +24,7 @@ if(interact_key){
     }
 }
 
-if(dash_key && obj_player_stats.stamina >= DASH_COST){
+if(obj_input.dash_key && obj_player_stats.stamina >= DASH_COST){
     state = scr_dash_state;
     alarm[0] = room_speed/6;
     
@@ -34,17 +33,17 @@ if(dash_key && obj_player_stats.stamina >= DASH_COST){
     exit;
 }
 
-if(attack_key){
+if(obj_input.attack_key){
     image_index = 0;
     state = scr_attack_state;
     exit;
 }
 
 // Get direction
-dir = point_direction(0, 0, xaxis, yaxis);
+dir = point_direction(0, 0, obj_input.xaxis, obj_input.yaxis);
 
 // Get the length
-if(xaxis == 0 && yaxis == 0){
+if(obj_input.xaxis == 0 && obj_input.yaxis == 0){
     len = 0;
 } else {
     len = spd;
