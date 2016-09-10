@@ -21,6 +21,7 @@
       <sprite>sprites\spr_player_attack_right</sprite>
     </sprites>
     <sprite>sprites\spr_damage</sprite>
+    <sprite>sprites\spr_expr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -49,6 +50,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_entity</object>
+    <object>objects\obj_expr</object>
     <object>objects\obj_sceneary</object>
     <object>objects\obj_player</object>
     <object>objects\obj_player_stats</object>
