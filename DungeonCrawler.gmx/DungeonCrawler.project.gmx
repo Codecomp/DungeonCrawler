@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_slime</sprite>
     <sprites name="player">
@@ -52,6 +53,7 @@
     <object>objects\obj_entity</object>
     <object>objects\obj_expr</object>
     <object>objects\obj_sceneary</object>
+    <object>objects\obj_door</object>
     <object>objects\obj_player</object>
     <object>objects\obj_player_stats</object>
     <object>objects\obj_wall</object>
@@ -62,6 +64,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
+    <room>rooms\rm_test2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
