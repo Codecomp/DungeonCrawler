@@ -7,9 +7,18 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_slime</sprite>
+    <sprite>sprites\spr_damage</sprite>
+    <sprites name="sceneary">
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_door</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\spr_slime</sprite>
+    </sprites>
+    <sprites name="item">
+      <sprite>sprites\spr_expr</sprite>
+      <sprite>sprites\spr_coin</sprite>
+    </sprites>
     <sprites name="player">
       <sprite>sprites\spr_player_shadow</sprite>
       <sprite>sprites\spr_player_down</sprite>
@@ -21,8 +30,6 @@
       <sprite>sprites\spr_player_attack_left</sprite>
       <sprite>sprites\spr_player_attack_right</sprite>
     </sprites>
-    <sprite>sprites\spr_damage</sprite>
-    <sprite>sprites\spr_expr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -31,6 +38,7 @@
   <scripts name="scripts">
     <scripts name="helper_scripts">
       <script>scripts\scr_get_face.gml</script>
+      <script>scripts\scr_chance.gml</script>
       <script>scripts\scr_get_input.gml</script>
     </scripts>
     <scripts name="player_states">
@@ -50,17 +58,31 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_entity</object>
-    <object>objects\obj_expr</object>
-    <object>objects\obj_sceneary</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_player_stats</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_slime</object>
-    <object>objects\obj_effect_dash</object>
-    <object>objects\obj_view</object>
-    <object>objects\obj_damage</object>
+    <objects name="entity">
+      <object>objects\obj_entity</object>
+      <objects name="player">
+        <object>objects\obj_player</object>
+        <object>objects\obj_player_stats</object>
+        <object>objects\obj_effect_dash</object>
+      </objects>
+      <objects name="enemy">
+        <object>objects\obj_slime</object>
+      </objects>
+    </objects>
+    <objects name="sceneary">
+      <object>objects\obj_sceneary</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_door</object>
+    </objects>
+    <objects name="item">
+      <object>objects\obj_item</object>
+      <object>objects\obj_expr</object>
+      <object>objects\obj_coin</object>
+    </objects>
+    <objects name="interface">
+      <object>objects\obj_view</object>
+      <object>objects\obj_damage</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

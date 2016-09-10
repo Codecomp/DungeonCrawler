@@ -59,6 +59,11 @@ targety = 0;
             <kind>1</kind>
             <string>// Spawn exp drops
 instance_create(x, y, obj_expr);
+
+// Drop coin drops
+if(scr_chance(0.5)){
+    instance_create((x+random_range(-4,4)), (y+random_range(-4,4)), obj_coin);
+}
 </string>
           </argument>
         </arguments>

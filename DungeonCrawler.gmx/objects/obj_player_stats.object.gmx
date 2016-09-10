@@ -34,6 +34,7 @@ level = 1;
 expr = 0;
 maxexpr = 3;
 attack = 1;
+gold = 0;
 </string>
           </argument>
         </arguments>
@@ -114,6 +115,7 @@ if(stamina &lt; maxstamina &amp;&amp; alarm[0] == -1){
 draw_text(16, 16, "HP: " + string(hp) + "/" + string(maxhp));
 draw_text(16, 32, "ST: " + string(stamina) + "/" + string(maxstamina));
 draw_text(16, 48, "LV: " + string(level));
+draw_text(16, 64, "G: " + string(gold));
 </string>
           </argument>
         </arguments>
