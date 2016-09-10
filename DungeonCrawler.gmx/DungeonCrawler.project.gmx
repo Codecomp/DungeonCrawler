@@ -40,6 +40,7 @@
   <scripts name="scripts">
     <scripts name="helper_scripts">
       <script>scripts\scr_get_face.gml</script>
+      <script>scripts\scr_string_copy_words.gml</script>
       <script>scripts\scr_chance.gml</script>
       <script>scripts\scr_get_input.gml</script>
     </scripts>
@@ -88,6 +89,7 @@
     <object>objects\obj_sign</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_speaker</object>
+    <object>objects\object16</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

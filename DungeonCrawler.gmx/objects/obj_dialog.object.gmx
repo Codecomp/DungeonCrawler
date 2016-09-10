@@ -56,13 +56,33 @@ margin = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Draw the dialog
-text_count += spd;
-text_visible = string_copy(text[text_page], 1, text_count);
+            <string>// Get the last space
+if( string_char_at(text[text_page], text_count) == ' '){
+    var last_space = text_count;
+}
+
+// Add smart returns
+var text_words = scr_string_copy_words(text[text_page], 1, text_count);
+if(string_width(text_words) &gt;= width-(margin*2)){
+    // Remove the space
+    text[text_page] = string_delete(text[text_page], last_space, 1);
+    
+    // Add return
+    text[text_page] = string_insert("#", text[text_page], last_space);
+}
+
+// Get the visisble text
+text_visible = string_copy(text[text_page], 0, text_count);
+
+// Update text location
 var xx = (x-view_xview[0]) * display_scale + margin;
 var yy = (y-view_yview[0]) * display_scale + margin;
 
+// Draw the text
 draw_text_ext(xx, yy, text_visible, -1, width-(margin*2));
+
+// Add to count
+text_count += spd;
 </string>
           </argument>
         </arguments>
