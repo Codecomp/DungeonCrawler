@@ -51,6 +51,7 @@
     <object>objects\obj_entity</object>
     <object>objects\obj_sceneary</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_player_stats</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_slime</object>
     <object>objects\obj_effect_dash</object>
