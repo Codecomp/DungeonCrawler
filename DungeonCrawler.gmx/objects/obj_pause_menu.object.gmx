@@ -102,12 +102,15 @@ if(alarm[0] &lt;= 0){
     if(obj_input.interact_key){
         switch(menu_index){
             case 0: // Return
+                obj_player_stats.room_start_action = RETURN;
                 room_goto(obj_player_stats.previous_room);
                 break;
             case 1: // Save
                 scr_save_game();
                 break;
             case 2: // Load
+                obj_player_stats.room_start_action = LOAD;
+                room_goto(obj_player_stats.previous_room);
                 break;
             case 3: // Quit
                 game_end();

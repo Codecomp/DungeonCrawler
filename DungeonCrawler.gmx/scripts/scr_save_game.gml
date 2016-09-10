@@ -7,8 +7,8 @@ if(!instance_exists(obj_player_stats)) exit;
 var save_data = ds_map_create();
 with(obj_player_stats){
     save_data[? "room"] = previous_room;
-    save_data[? "x"] = 0;
-    save_data[? "y"] = 0;
+    save_data[? "x"] = player_xstart;
+    save_data[? "y"] = player_ystart;
     save_data[? "hp"] = hp;
     save_data[? "maxhp"] = maxhp;
     save_data[? "stamina"] = stamina;
