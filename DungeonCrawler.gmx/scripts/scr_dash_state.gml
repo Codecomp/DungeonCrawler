@@ -1,5 +1,10 @@
 ///scr_dash_state
 
+// Wor out direction from face if not moving
+if(len == 0){
+    dir = face*90;
+}
+
 // Set dash speed
 len = spd*4;
 
