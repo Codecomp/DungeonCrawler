@@ -59,8 +59,10 @@
       <script>scripts\scr_enemy_wander_state.gml</script>
       <script>scripts\scr_enemy_chase_state.gml</script>
     </scripts>
-    <script>scripts\scr_load_game.gml</script>
-    <script>scripts\scr_save_game.gml</script>
+    <scripts name="system">
+      <script>scripts\scr_save_game.gml</script>
+      <script>scripts\scr_load_game.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="entity">
@@ -88,11 +90,14 @@
       <object>objects\obj_view</object>
       <object>objects\obj_pause_menu</object>
       <object>objects\obj_input</object>
-      <object>objects\obj_damage</object>
     </objects>
     <objects name="dialog">
       <object>objects\obj_dialog</object>
       <object>objects\obj_speaker</object>
+    </objects>
+    <objects name="system">
+      <object>objects\obj_damage</object>
+      <object>objects\obj_projectile</object>
     </objects>
     <object>objects\obj_sign</object>
   </objects>
