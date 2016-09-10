@@ -10,4 +10,5 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 // Flip sprite towards direction
-image_xscale = sign(hspd);
+if(hspd != 0)
+    image_xscale = sign(hspd);
