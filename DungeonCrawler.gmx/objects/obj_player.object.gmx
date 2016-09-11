@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 
+// Tmp fix for duplicate player entities
+if(instance_number(obj_player) &gt; 1) instance_destroy();
+
 // Fix clipping issues
 phy_bullet = true;
 
