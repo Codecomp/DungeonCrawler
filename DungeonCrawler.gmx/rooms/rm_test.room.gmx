@@ -73,6 +73,7 @@
     <instance objName="obj_door" x="608" y="312" name="inst_F478FCDB" locked="0" code="dst_x = 608;&#xA;dst_y = 24;&#xA;dst_room = rm_test2;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="128" y="120" name="inst_EF2D3F8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_input" x="64" y="48" name="inst_4BE1038F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_chinlin" x="184" y="72" name="inst_1ED77832" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

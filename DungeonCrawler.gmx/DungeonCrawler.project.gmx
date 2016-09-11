@@ -15,7 +15,17 @@
       <sprite>sprites\spr_door</sprite>
     </sprites>
     <sprites name="enemy">
-      <sprite>sprites\spr_slime</sprite>
+      <sprites name="slime">
+        <sprite>sprites\spr_slime</sprite>
+      </sprites>
+      <sprites name="chinlin">
+        <sprite>sprites\spr_chinlin_stand_right</sprite>
+        <sprite>sprites\spr_chinlin_stand_up</sprite>
+        <sprite>sprites\spr_chinlin_stand_down</sprite>
+        <sprite>sprites\spr_chinlin_run_right</sprite>
+        <sprite>sprites\spr_chinlin_run_up</sprite>
+        <sprite>sprites\spr_chinlin_run_down</sprite>
+      </sprites>
     </sprites>
     <sprites name="item">
       <sprite>sprites\spr_expr</sprite>
@@ -75,6 +85,7 @@
       </objects>
       <objects name="enemy">
         <object>objects\obj_slime</object>
+        <object>objects\obj_enemy_chinlin</object>
       </objects>
     </objects>
     <objects name="sceneary">
