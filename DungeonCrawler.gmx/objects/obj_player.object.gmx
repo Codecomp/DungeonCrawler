@@ -40,6 +40,18 @@ vspd = 0;
 len = 0;
 dir = 0;
 face = RIGHT;
+movement = MOVE;
+
+// Setup sptire arrays
+sprite[RIGHT, MOVE] = spr_player_right;
+sprite[UP, MOVE] = spr_player_up;
+sprite[LEFT, MOVE] = spr_player_left;
+sprite[DOWN, MOVE] = spr_player_down;
+
+sprite[RIGHT, MELEE] = spr_player_attack_right;
+sprite[UP, MELEE] = spr_player_attack_up;
+sprite[LEFT, MELEE] = spr_player_attack_left;
+sprite[DOWN, MELEE] = spr_player_attack_down;
 
 // Set aimation settings
 image_speed = 0;
@@ -92,11 +104,14 @@ state = scr_move_state;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Execute the current state
+            <string>// Setup z-indexing
+depth = -y;
+
+// Execute the current state
 script_execute(state);
 
-// Setup z-indexing
-depth = -y;
+// Update sprite
+sprite_index = sprite[face, movement];
 
 // Chec for death
 if(obj_player_stats.hp &lt;= 0){

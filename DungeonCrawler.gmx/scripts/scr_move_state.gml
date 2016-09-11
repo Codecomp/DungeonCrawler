@@ -1,5 +1,7 @@
 ///scr_move_state
 
+movement = MOVE;
+
 // Check for action states
 if(obj_input.interact_key){
     var xdir =lengthdir_x(8, face*90);
@@ -72,19 +74,3 @@ phy_position_y += vspd;
 // Control the sprite
 image_speed = .2;
 if(len == 0) image_index = 0;
-
-// Controll sprite direction
-switch(face){
-    case(RIGHT):
-        sprite_index = spr_player_right;
-        break;
-    case(UP):
-        sprite_index = spr_player_up;
-        break;
-    case(LEFT):
-        sprite_index = spr_player_left;
-        break;
-    case(DOWN):
-        sprite_index = spr_player_down;
-        break;
-}
