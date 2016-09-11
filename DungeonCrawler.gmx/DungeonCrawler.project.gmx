@@ -36,6 +36,7 @@
       <sprite>sprites\spr_expr</sprite>
       <sprite>sprites\spr_coin</sprite>
       <sprites name="weapons">
+        <sprite>sprites\spr_axe</sprite>
         <sprite>sprites\spr_sword</sprite>
       </sprites>
     </sprites>
@@ -83,6 +84,7 @@
       <script>scripts\scr_save_game.gml</script>
       <script>scripts\scr_load_game.gml</script>
     </scripts>
+    <script>scripts\scr_swap_weapon.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="entity">
@@ -122,7 +124,7 @@
     </objects>
     <object>objects\obj_sign</object>
     <object>objects\obj_weapon_animaion</object>
-    <object>objects\obj_weapon_animation_sword</object>
+    <object>objects\obj_weapon_item</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

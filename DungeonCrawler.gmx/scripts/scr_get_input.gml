@@ -8,6 +8,7 @@ attack_key = keyboard_check_pressed(ord(' '));
 fire_key = keyboard_check_pressed(vk_control);
 interact_key = keyboard_check_pressed(ord(' '));
 pause_key = keyboard_check_pressed(vk_escape);
+swap_key = keyboard_check_pressed(vk_alt);
 
 // Get the Axis
 xaxis = right_key - left_key;
@@ -23,4 +24,5 @@ if(gamepad_is_connected(0)){
     fire_key = gamepad_button_check_pressed(0, gp_face3)
     interact_key = gamepad_button_check_pressed(0, gp_face1);
     pause_key = gamepad_button_check_pressed(0, gp_start);
+    swap_key = gamepad_button_check_pressed(0, gp_face4);
 }

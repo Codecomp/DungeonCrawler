@@ -34,7 +34,7 @@ if(instance_number(obj_player) &gt; 1) instance_destroy();
 phy_bullet = true;
 
 // Setup combat paramaters
-weapon = obj_weapon_animation_sword;
+weapon_sprite = spr_sword;
 
 // Set global movement variables
 spd = 2;

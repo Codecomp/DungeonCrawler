@@ -3,6 +3,13 @@
 // Setup sprite state
 movement = MOVE;
 
+if(obj_input.swap_key){
+    var nearest_weapon = instance_nearest(x, y, obj_weapon_item);
+    if(place_meeting(x, y+4, nearest_weapon)){
+        scr_swap_weapon(nearest_weapon);
+    }
+}
+
 // Check for action states
 if(obj_input.interact_key){
     var xdir =lengthdir_x(8, face*90);
