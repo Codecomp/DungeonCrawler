@@ -3,6 +3,8 @@
 // Setup sprite state
 movement = MELEE;
 
+image_speed = .5;
+
 // Update srite positin ans speed
 image_speed = .5;
 if(image_index >= 3 && attacked == false){
