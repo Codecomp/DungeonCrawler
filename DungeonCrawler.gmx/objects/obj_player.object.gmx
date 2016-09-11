@@ -33,8 +33,8 @@ if(instance_number(obj_player) &gt; 1) instance_destroy();
 // Fix clipping issues
 phy_bullet = true;
 
-// Combat variables
-attacked = false;
+// Setup combat paramaters
+weapon = obj_weapon_animation_sword;
 
 // Set global movement variables
 spd = 2;

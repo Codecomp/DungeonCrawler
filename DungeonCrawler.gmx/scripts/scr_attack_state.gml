@@ -3,11 +3,18 @@
 // Setup sprite state
 movement = MELEE;
 
+
 image_speed = .5;
 
-// Update srite positin ans speed
-image_speed = .5;
-if(image_index >= 3 && attacked == false){
+// Create weapon animation
+if(scr_animation_hit_frame(2)){
+    var attack_animation = instance_create(x, y, weapon);
+    attack_animation.dir = face*90;
+    attack_animation.image_angle = (face*90)+45;
+}
+
+// Update srite positin and speed
+if(scr_animation_hit_frame(3)){
     var xx = 0;
     var yy = 0;
     switch(face){
