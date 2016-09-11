@@ -76,7 +76,10 @@ sprite[DOWN, IDLE] = spr_chinlin_stand_up;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Spawn exp drops
+            <string>// Trigger sound effect
+audio_play_sound(snd_enemy_die, 4, false);
+
+// Spawn exp drops
 instance_create(x, y, obj_expr);
 
 // Drop coin drops

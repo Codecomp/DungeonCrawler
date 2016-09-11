@@ -80,6 +80,9 @@ instance_destroy();
     // Damage all entities
     obj_player_stats.hp -= damage;
     
+    // Trigger sound effect
+    audio_play_sound(snd_player_takes_damage, 9, false);
+    
     // Knockback on entities
     if(instance_exists(creator)){
         var dir = point_direction(creator.x, creator.y, other.x, other.y);
